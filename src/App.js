@@ -17,7 +17,7 @@ function App() {
       const parsedJson = JSON.parse(jsonInput);
 
       // Update the URL to point to your backend
-      const res = await axios.post('http://localhost:5000/bfhl', parsedJson);
+      const res = await axios.post('https://bjf-backend.onrender.com/bfhl', parsedJson);
       setResponse(res.data);
     } catch (error) {
       alert('Invalid JSON or API error');
